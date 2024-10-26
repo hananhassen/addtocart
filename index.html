@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <script src="script.js" defer></script>
-
+<style>
+  img{
+    width: 100%;
+    height:50%;
+    object-fit: cover;
+}
+</style>
   </head>
 
 
@@ -59,67 +65,75 @@
 
 <div class="content grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 m-5 pt-12" id="div1" >
    <h1 class="col-span-full uppercase text-gray-900 text-2xl p-4 italic font-bold">kids</h1> 
-  <div class="product border-4 rounded-lg border-blue-200  ">
+  <div class="relative product border-4 rounded-lg border-blue-200  ">
    
     <img src="./download (1).jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">red dress </p>
     <p class="text-yellow-600 text-center text-4xl">100$</p>
     <button onclick="addtocart()" data-id="1" data-name="red dress" data-price="100" data-image="./download (1).jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg absolute bottom-0">ADD TO CART</button>
   </div>
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="relative border-4 rounded-lg border-blue-200 ">
    
     <img src="./download (3).jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">black dress </p>
     <p class="text-yellow-600 text-center text-4xl">120$</p>
     <button onclick="addtocart()" data-id="2" data-name="black-dress" data-price="120" data-image="./download (3).jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
-  </div>  <div class="product border-4 rounded-lg border-blue-200  ">
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg absolute bottom-0">ADD TO CART</button>
+  </div> 
+   <div class="relative product border-4 rounded-lg border-blue-200  ">
    
     <img src="./download (2).jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">rose dress </p>
     <p class="text-yellow-600 text-center text-4xl">90$</p>
     <button onclick="addtocart()" data-id="3" data-name="rose-dress" data-price="90" data-image="./download (2).jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
-  </div>  <div class="product border-4 rounded-lg border-blue-200  ">
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg absolute bottom-0">ADD TO CART</button>
+  </div>  <div class="
+  relative product border-4 rounded-lg border-blue-200  ">
    
     <img src="./download (4).jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">pinky dress </p>
     <p class="text-yellow-600 text-center text-4xl">100$</p>
     <button onclick="addtocart()" data-id="4" data-name="pinky-dress" data-price="100" data-image="./download (4).jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg absolute bottom-0">ADD TO CART</button>
   </div>
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class=" relative product border-4 rounded-lg border-blue-200  ">
+
    
     <img src="./download (5).jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">violete dress </p>
     <p class="text-yellow-600 text-center text-4xl">150$</p>
     <button onclick="addtocart()" data-id="5" data-name="violate-dress" data-price="150" data-image="./download (5).jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg absolute bottom-0">ADD TO CART</button>
   </div> 
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class=" relative product border-4 rounded-lg border-blue-200  ">
+
    
     <img src="./download (6).jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">white shoes </p>
     <p class="text-yellow-600 text-center text-4xl">40$</p>
     <button onclick="addtocart()" data-id="6" data-name="white shoes" data-price="40" data-image="./download (6).jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg  absolute bottom-0">ADD TO CART</button>
+
   </div> 
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="  relative product border-4 rounded-lg border-blue-200  ">
+
    
     <img src="./download (7).jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">pink shoes</p>
     <p class="text-yellow-600 text-center text-4xl">20$</p>
     <button onclick="addtocart()" data-id="7" data-name="pink -shoes" data-price="20" data-image="./download (7).jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg  absolute bottom-0">ADD TO CART</button>
+
   </div> 
-  <div class="product border-4 rounded-lg border-blue-200 ">
-   
+  <div class="  relative product border-4 rounded-lg border-blue-200  ">
+
+
     <img src="./download.jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase"> dress </p>
     <p class="text-yellow-600 text-center text-4xl">70$</p>
     <button onclick="addtocart()" data-id="8" data-name="dress" data-price="70" data-image="./download.jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg   absolute bottom-0">ADD TO CART</button>
   </div> 
 
 </div>
@@ -127,67 +141,77 @@
 <div class="content flex grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 m-5 p-4" id="div2">
   <h1 class="col-span-full uppercase text-gray-900 text-2xl p-4 italic font-bold">shoes</h1> 
   
-  <div class="product border-4 rounded-lg border-blue-200  ">
+  <div class="  relative product border-4 rounded-lg border-blue-200  ">
+
    
     <img src="./images (1).jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">shoes </p>
     <p class="text-yellow-600 text-center text-4xl">100$</p>
     <button onclick="addtocart()" data-id="9" data-name="shoes" data-price="100" data-image="./images (1).jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg   absolute bottom-0">ADD TO CART</button>
+
   </div>
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="   relative product border-4 rounded-lg border-blue-200  ">
+
    
     <img src="./images (2).jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">shoes </p>
     <p class="text-yellow-600 text-center text-4xl">120$</p>
     <button onclick="addtocart()" data-id="10" data-name="shoes" data-price="120" data-image="./images (2).jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
-  </div>  <div class="product border-4 rounded-lg border-blue-200  ">
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg   absolute bottom-0">ADD TO CART</button>
+
+  </div>  <div class="   relative product border-4 rounded-lg border-blue-200  ">
+
    
     <img src="./images (3).jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">shoes </p>
     <p class="text-yellow-600 text-center text-4xl">90$</p>
     <button onclick="addtocart()" data-id="11" data-name="shoes" data-price="90" data-image="./images (3).jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
-  </div>  <div class="product border-4 rounded-lg border-blue-200  ">
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg    absolute bottom-0">ADD TO CART</button>
+
+  </div>  <div class="product border-4 rounded-lg border-blue-200 relative ">
   
     <img src="./images (4).jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">shoes </p>
     <p class="text-yellow-600 text-center text-4xl">100$</p>
     <button onclick="addtocart()" data-id="12" data-name="shoes" data-price="100" data-image="./images (4).jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200 absolute bottom-0 w-full rounded-lg">ADD TO CART</button>
   </div>
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="product border-4 rounded-lg border-blue-200  relative ">
+
    
     <img src="./images (5).jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">shoes </p>
     <p class="text-yellow-600 text-center text-4xl">150$</p>
     <button onclick="addtocart()" data-id="13" data-name="shoes" data-price="150" data-image="./images (5).jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center absolute bottom-0 bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
   </div> 
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="product border-4 rounded-lg border-blue-200  relative ">
+
    
     <img src="./images (6).jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">shoes </p>
     <p class="text-yellow-600 text-center text-4xl">40$</p>
     <button onclick="addtocart()" data-id="14" data-name="shoes" data-price="40" data-image="./images (6).jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart absolute bottom-0 p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
   </div> 
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="product border-4 rounded-lg  border-blue-200  relative ">
+
    
     <img src="./images.jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase"> shoes</p>
     <p class="text-yellow-600 text-center text-4xl">20$</p>
     <button onclick="addtocart()" data-id="15" data-name="shoes" data-price="20" data-image="./images.jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center absolute bottom-0 bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
   </div> 
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="product  border-4 rounded-lg border-blue-200  relative ">
+
    
     <img src="./women-causal-shoes-500x500.webp" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">shoes</p>
     <p class="text-yellow-600 text-center text-4xl">70$</p>
     <button onclick="addtocart()" data-id="16" data-name="shoes" data-price="70" data-image="./women-causal-shoes-500x500.webp"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart absolute bottom-0 p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
   </div> 
 
 </div>
@@ -196,67 +220,73 @@
 <div class="content flex grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 m-5 p-4" id="div3">
   <h1 class="col-span-full uppercase text-gray-900 text-2xl p-4 italic font-bold">abaya</h1> 
   
-  <div class="product border-4 rounded-lg border-blue-200  ">
+  <div class="product  border-4 rounded-lg border-blue-200  relative ">
+
    
     <img src="./024b2fcc-312a-4da3-818b-9ffbe0effc39.webp" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">abaya </p>
     <p class="text-yellow-600 text-center text-4xl">100$</p>
     <button onclick="addtocart()" data-id="17" data-name="abaya" data-price="100" data-image="./024b2fcc-312a-4da3-818b-9ffbe0effc39.webp"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart absolute bottom-0 p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
   </div>
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="product  relative border-4 rounded-lg border-blue-200 ">
    
     <img src="./1714968396438632596ade671e2f2ec1ebefa2a501_thumbnail_750x999.webp" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">abaya </p>
     <p class="text-yellow-600 text-center text-4xl">120$</p>
     <button onclick="addtocart()" data-id="18" data-name="abaya" data-price="120" data-image="./1714968396438632596ade671e2f2ec1ebefa2a501_thumbnail_750x999.webp"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
-  </div>  <div class="product border-4 rounded-lg border-blue-200  ">
+     class="add-to-cart absolute bottom-0 p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+  </div> 
+   <div class="product border-4 relative rounded-lg border-blue-200  ">
    
     <img src="./48cd6c2692737263eb1218dc8688de0f.jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">abaya </p>
     <p class="text-yellow-600 text-center text-4xl">90$</p>
     <button onclick="addtocart()" data-id="19" data-name="abaya" data-price="90" data-image="./48cd6c2692737263eb1218dc8688de0f.jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
-  </div>  <div class="product border-4 rounded-lg border-blue-200  ">
+     class="add-to-cart p-4 absolute bottom-0 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+  </div>  <div class="product  border-4 relative rounded-lg border-blue-200  ">
+
    
     <img src="./8659783a-b433-40bf-9756-ba4f52033cf7.webp" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">abaya </p>
     <p class="text-yellow-600 text-center text-4xl">100$</p>
     <button onclick="addtocart()" data-id="20" data-name="abaya" data-price="100" data-image="./8659783a-b433-40bf-9756-ba4f52033cf7.webp"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 absolute bottom-0 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
   </div>
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="product   border-4 relative rounded-lg border-blue-200  ">
+
    
     <img src="./ea6402c5-0948-48fc-ae13-0ac5dd9b2caf.webp" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">abaya </p>
     <p class="text-yellow-600 text-center text-4xl">150$</p>
     <button onclick="addtocart()" data-id="21" data-name="abaya" data-price="150" data-image="./ea6402c5-0948-48fc-ae13-0ac5dd9b2caf.webp"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart absolute bottom-0 p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
   </div> 
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="product   border-4 relative rounded-lg border-blue-200  ">
+
    
     <img src="./Elegant-Muslim-Dresses-for-Women-Long-Dress-Women-Abaya-Dress-Plus-Size-Casual-Round-Neck-Loose-Sexy-Long-Sleeve-Printed-Dress_58d95093-4202-493a-b4ea-4aa1b8ccef39.32b7b43aad2e96072471f09042b47f.avif" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">abaya </p>
     <p class="text-yellow-600 text-center text-4xl">40$</p>
     <button onclick="addtocart()" data-id="22" data-name="abaya" data-price="40" data-image="./Elegant-Muslim-Dresses-for-Women-Long-Dress-Women-Abaya-Dress-Plus-Size-Casual-Round-Neck-Loose-Sexy-Long-Sleeve-Printed-Dress_58d95093-4202-493a-b4ea-4aa1b8ccef39.32b7b43aad2e96072471f09042b47f.avif"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart absolute bottom-0 p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
   </div> 
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="product border-4 rounded-lg border-blue-200 relative ">
    
     <img src="./fe318b0f-6ec1-475a-a836-c1852e07beda.webp" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">abaya</p>
     <p class="text-yellow-600 text-center text-4xl">20$</p>
     <button onclick="addtocart()" data-id="23" data-name="abaya" data-price="20" data-image="./fe318b0f-6ec1-475a-a836-c1852e07beda.webp"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart absolute bottom-0 p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
   </div> 
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="product  border-4 relative rounded-lg border-blue-200  ">
+
    
     <img src="./Hf3727802778044d6abc1b12612e06b610.jpg_960x960_8ea34dba-5558-49e4-96c5-8e337fd93f9e_800x.jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">abaya </p>
     <p class="text-yellow-600 text-center text-4xl">70$</p>
     <button onclick="addtocart()" data-id="24" data-name="abaya" data-price="70" data-image="./Hf3727802778044d6abc1b12612e06b610.jpg_960x960_8ea34dba-5558-49e4-96c5-8e337fd93f9e_800x.jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart absolute bottom-0 p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
   </div> 
 
 </div>
@@ -264,67 +294,70 @@
 <div class="content flex grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 m-5 p-4" id="div4">
   <h1 class="col-span-full uppercase text-gray-900 text-2xl p-4 italic font-bold">bags</h1> 
   
-  <div class="product border-4 rounded-lg border-blue-200  ">
+  <div class="product relative border-4 rounded-lg border-blue-200  ">
    
     <img src="./51BH9svV-qL._AC_SL1001_.jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">bag </p>
     <p class="text-yellow-600 text-center text-4xl">100$</p>
     <button onclick="addtocart()" data-id="25" data-name="bag" data-price="100" data-image="./51BH9svV-qL._AC_SL1001_.jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart absolute bottom-0 p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
   </div>
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="product  border-4 relative rounded-lg border-blue-200  ">
+
    
     <img src="./3697a709c80be18efd02bfa6822b739c.jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">bag </p>
     <p class="text-yellow-600 text-center text-4xl">120$</p>
     <button onclick="addtocart()" data-id="26" data-name="bag " data-price="120" data-image="./3697a709c80be18efd02bfa6822b739c.jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
-  </div>  <div class="product border-4 rounded-lg border-blue-200  ">
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200 absolute bottom-0 w-full rounded-lg absolute bottom-0">ADD TO CART</button>
+  </div>  
+  <div class="product border-4 rounded-lg border-blue-200 relative ">
    
     <img src="./b.jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">bag </p>
     <p class="text-yellow-600 text-center text-4xl">90$</p>
     <button onclick="addtocart()" data-id="26" data-name="bag " data-price="90" data-image="./b.jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
-  </div>  <div class="product border-4 rounded-lg border-blue-200  ">
+     class="add-to-cart absolute bottom-0 p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+  </div> 
+   <div class="product border-4 rounded-lg border-blue-200 relative ">
    
     <img src="./ba.jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">bag  </p>
     <p class="text-yellow-600 text-center text-4xl">100$</p>
     <button onclick="addtocart()" data-id="27" data-name="bag " data-price="100" data-image="./ba.jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart absolute bottom-0 p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
   </div>
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="product border-4 rounded-lg border-blue-200 relative ">
    
     <img src="./bag.jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">bag </p>
     <p class="text-yellow-600 text-center text-4xl">150$</p>
     <button onclick="addtocart()" data-id="28" data-name="bag " data-price="150" data-image="./bag.jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200 absolute bottom-0  w-full rounded-lg">ADD TO CART</button>
   </div> 
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="product border-4 rounded-lg border-blue-200 relative">
    
     <img src="./bag1.jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">bag  </p>
     <p class="text-yellow-600 text-center text-4xl">40$</p>
     <button onclick="addtocart()" data-id="29" data-name="bag " data-price="40" data-image="./bag1.jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center absolute bottom-0 bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
   </div> 
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="product border-4 rounded-lg border-blue-200 relative ">
    
     <img src="./bag2.jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">bag </p>
     <p class="text-yellow-600 text-center text-4xl">20$</p>
     <button onclick="addtocart()" data-id="30" data-name="bag " data-price="20" data-image="./bag2.jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 absolute bottom-0 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
   </div> 
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="product border-4 rounded-lg border-blue-200 relative">
    
     <img src="./bag3.jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase"> bag  </p>
     <p class="text-yellow-600 text-center text-4xl">70$</p>
     <button onclick="addtocart()" data-id="31" data-name="bag " data-price="70" data-image="./bag3.jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 absolute bottom-0 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
   </div> 
 
 </div>
@@ -332,67 +365,67 @@
 <div class="content flex grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 m-5 p-4 " id="div5">
   <h1 class="col-span-full uppercase text-gray-900 text-2xl p-4 italic font-bold">jewlery</h1> 
   
-  <div class="product border-4 rounded-lg border-blue-200  ">
+  <div class="product border-4 rounded-lg border-blue-200 relative ">
    
     <img src="./beautiful-indian-jewellery-low-light-260nw-1299355801 (1).webp" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">jewlery </p>
     <p class="text-yellow-600 text-center text-4xl">100$</p>
     <button onclick="addtocart()" data-id="32" data-name="jewlery" data-price="100" data-image="./beautiful-indian-jewellery-low-light-260nw-1299355801 (1).webp"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 absolute bottom-0 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
   </div>
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="product border-4 rounded-lg border-blue-200 relative ">
    
     <img src="./71VeV8zexSS._AC_SL1500_.jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">jewlery </p>
     <p class="text-yellow-600 text-center text-4xl">120$</p>
     <button onclick="addtocart()" data-id="33" data-name="jewlery" data-price="120" data-image="./71VeV8zexSS._AC_SL1500_.jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
-  </div>  <div class="product border-4 rounded-lg border-blue-200  ">
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200 absolute bottom-0  w-full rounded-lg">ADD TO CART</button>
+  </div>  <div class="product border-4 rounded-lg border-blue-200 relative ">
    
     <img src="./71yaF6ZBJrS._AC_SL1500_.jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">jewlery</p>
     <p class="text-yellow-600 text-center text-4xl">90$</p>
     <button onclick="addtocart()" data-id="34" data-name="jewlery" data-price="90" data-image="./71yaF6ZBJrS._AC_SL1500_.jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
-  </div>  <div class="product border-4 rounded-lg border-blue-200  ">
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200 absolute bottom-0 w-full rounded-lg">ADD TO CART</button>
+  </div>  <div class="product border-4 rounded-lg border-blue-200 relative ">
    
     <img src="./j.jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">jewlery</p>
     <p class="text-yellow-600 text-center text-4xl">100$</p>
     <button onclick="addtocart()" data-id="35" data-name="jewlery" data-price="100" data-image="./j.jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200 absolute bottom-0 w-full rounded-lg">ADD TO CART</button>
   </div>
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="product border-4 rounded-lg border-blue-200 relative">
    
     <img src="./je.jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">jewlery</p>
     <p class="text-yellow-600 text-center text-4xl">150$</p>
     <button onclick="addtocart()" data-id="36" data-name="jewlery" data-price="150" data-image="./je.jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200 absolute bottom-0 w-full rounded-lg">ADD TO CART</button>
   </div> 
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="product border-4 rounded-lg border-blue-200 relative ">
    
     <img src="./jew.jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">jewlery </p>
     <p class="text-yellow-600 text-center text-4xl">40$</p>
     <button onclick="addtocart()" data-id="37" data-name="jewlery" data-price="40" data-image="./jew.jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200 absolute bottom-0 w-full rounded-lg">ADD TO CART</button>
   </div> 
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="product border-4 rounded-lg border-blue-200 relative ">
    
     <img src="./jj.jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase">jewlery</p>
     <p class="text-yellow-600 text-center text-4xl">20$</p>
     <button onclick="addtocart()" data-id="38" data-name="jewlery" data-price="20" data-image="./jj.jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200 absolute bottom-0  w-full rounded-lg">ADD TO CART</button>
   </div> 
-  <div class="product border-4 rounded-lg border-blue-200 ">
+  <div class="product border-4 rounded-lg border-blue-200 relative ">
    
     <img src="./91IH3VNE9lL._AC_UL1500_.jpg" alt="" class="border-4 border-blue-600 w-full">
     <p class="text-2xl text-center uppercase"> jewlery </p>
     <p class="text-yellow-600 text-center text-4xl">70$</p>
     <button onclick="addtocart()" data-id="39" data-name="jewlery" data-price="70" data-image="./91IH3VNE9lL._AC_UL1500_.jpg"
-     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200  w-full rounded-lg">ADD TO CART</button>
+     class="add-to-cart p-4 text-1xl text-center bg-green-600 hover:bg-green-400 text-gray-200 absolute bottom-0 w-full rounded-lg">ADD TO CART</button>
   </div> 
 
 </div>
@@ -407,21 +440,23 @@
     <label  class="text-sm md:text-xl lg:text-2xl  text-gray-100 text-center m-5" >addis ababa alem bank square</label> <br>
     <p class="text-xs md:text-xl lg:text-2xl text-center   text-gray-100 m-auto  m-5 absolute  bottom-0 left-0 " > &nbsp;&nbsp;&nbsp;&nbsp;copyright &copy;2024:HANAN HASSEN</p>
 </div>
-<div id="div8" class="p- pt-28 product border-4 rounded-lg border-blue-200 ">
+<div id="div8" class="p- pt-28 relative">
   <h2>Shopping Cart</h2>
-  <div id="cart-items" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 "></div>
+  <div id="cart-items" class=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 relative border-4 rounded-lg border-blue-200  "></div>
   
   <p>Total: $<span id="cart-total" class="text-yellow-600 text-center text-4xl">0.00</span></p> 
-<button id="confirm" class="rounded-lg border-green-700 hover:bg-green-600 bg-green-400 text-gray-200 px-5 py-2 w-full" onclick="payment()">confirm</button>
+  <button id="remove" class="btnn mt-28 absolute top-0 right-0 bg-red-600 text-gray-100 rounded-lg p-5 opacity-0"  data-id="${item.id}">clean cart</button>
+
+<button id="confirm" class="rounded-lg border-green-700 hover:bg-green-600 bg-green-400 text-gray-200 px-5 py-2 w-full " onclick="payment()">choose payment method</button>
 
 
 
-<div id="choise" class=" uppercase opacity-0 ">
-  <p>choose payment method</p>
-  <button class="btn rounded-lg border-green-700 hover:bg-green-600 bg-green-400 text-gray-200 px-5 py-2 w-full" onclick="completd()">zemzem bank</button>
+<div id="choise" class=" uppercase opacity-0 m-9 p-5">
+  <p></p>
+  <button class="btn m-2 rounded-lg border-green-700 hover:bg-green-600 bg-green-400 text-gray-200 px-5 py-2 w-full" onclick="completd()">zemzem bank</button>
 
-  <button class="btn rounded-lg border-green-700 hover:bg-green-600 bg-green-400 text-gray-200 px-5 py-2 w-full" onclick="complet()">tele birr</button>
-<button class="btn rounded-lg border-green-700 hover:bg-green-600 bg-green-400 text-gray-200 px-5 py-2 w-full" onclick="comple()">cbe</button>
+  <button class="btn m-2 rounded-lg border-green-700 hover:bg-green-600 bg-green-400 text-gray-200 px-5 py-2 w-full" onclick="complet()">tele birr</button>
+<button class="btn m-2 rounded-lg border-green-700 hover:bg-green-600 bg-green-400 text-gray-200 px-5 py-2 w-full" onclick="comple()">cbe</button>
  
 </div> 
 </div>

@@ -42,9 +42,10 @@ menu.addEventListener("click",function(){
 
 })
 let cart=[];
-
+let tot=0;
 function addToCart(productId, productName, productPrice, productImage){
-    const existingitem=cart.find(item=>item.id===productId)
+    const existingitem=cart.find(item=>item.id===productId);
+    tot++;
     if(existingitem){
         existingitem.quantity+=1;
     }else{
@@ -56,19 +57,31 @@ function addToCart(productId, productName, productPrice, productImage){
             quantity: 1
         });
     }
+    if(cart.length>0){
+        remov.style.opacity="1";
+        }
+    console.log(tot);
 
           displaycart();
           ubdatenotification();
-          function  ubdatenotification(){
-            let bage=document.querySelector(".notif");
-            if(cart.length===0){
-                bage.style.display
-            }
-           
-           else{ bage.textContent=cart.length}
-          }
+    
+
+
+
+
 
 }
+function  ubdatenotification(){
+    let bage=document.querySelector(".notif");
+
+    if(cart.length===0){
+    
+    }
+   
+   else{
+
+     bage.textContent=tot;}
+  }
 function displaycart(){
     const cartItems = document.getElementById('cart-items');
     const cartTotal = document.getElementById('cart-total');
@@ -78,22 +91,54 @@ function displaycart(){
 
     cart.forEach(item => {
         const div = document.createElement('div');
+        div.classList.add("newdiv");
         div.innerHTML = `
             <img src="${item.image}" alt="${item.name}" width="30px" hight="30px" class="border-4 border-blue-600 w-full">
             <p class=" text-2xl text-center uppercase">${item.name} - $${item.price} x ${item.quantity}</p>
+            
         `;
+
         cartItems.appendChild(div);
-         cartItems.style.display="flex"
         total += item.price * item.quantity;
     });
 
     cartTotal.textContent = `${total}`;
+    cartItems.style.display="flex"
+    
 }
-function payment(){
+let remov=document.getElementById("remove");
+remov.addEventListener("click",()=>{
+    const rem=confirm("are you sure you want to clear the cart?");
+    if(rem){let bage=document.querySelector(".notif");
+        cart=[];
+        tot=0;
+        bage.textContent="0";
+        remov.style.opacity="0"
+        ubdatenotification();
+        displaycart();
 
+    }
+    else{
+    
+
+    }
+  
+    
+   
+})
+
+
+  
+    
+  
+
+
+
+function payment(){
  let choise=document.getElementById("choise");
 
- if(choise.style.opacity==="1")
+
+ if(choise.style.opacity==="0")
       { choise.style.opacity="0";}
   else{ choise.style.opacity="1"}
 ;
@@ -101,36 +146,60 @@ function payment(){
 }
 
 
-function completd(){
-let bage=document.querySelector(".notif");
-    cart=[];
-    displaycart();
-   
-        alert(`the paymentcomplited successfully thankyou!!`)
-   choise.style.opacity="0";
-   bage.textContent="";
-   
 
-}
-function complet(){
-    let bage=document.querySelector(".notif");
+
+function completd(){ 
+    const ans=confirm("do you want to confirm your payment?");
+    if(ans){let bage=document.querySelector(".notif");
         cart=[];
         displaycart();
        
             alert(`the paymentcomplited successfully thankyou!!`)
        choise.style.opacity="0";
        bage.textContent="";
+
+    }
+    else{
+        choise.style.opacity="0";
+
+    }
+
+   
+
+}
+function complet(){
+    const ans=confirm("do you want to confirm your payment?");
+    if(ans){let bage=document.querySelector(".notif");
+        cart=[];
+        displaycart();
+       
+            alert(`the paymentcomplited successfully thankyou!!`)
+       choise.style.opacity="0";
+       bage.textContent="";
+
+    }
+    else{
+        choise.style.opacity="0";
+
+    }
        
     
     }
     function comple(){
-        let bage=document.querySelector(".notif");
-            cart=[];
-            displaycart();
-           
-                alert(`the paymentcomplited successfully thankyou!!`)
-           choise.style.opacity="0";
-           bage.textContent="";
+        const ans=confirm("do you want to confirm your payment?");
+    if(ans){let bage=document.querySelector(".notif");
+        cart=[];
+        displaycart();
+       
+            alert(`the paymentcomplited successfully thankyou!!`)
+       choise.style.opacity="0";
+       bage.textContent="";
+
+    }
+    else{
+        choise.style.opacity="0";
+
+    }
            
         
         }
